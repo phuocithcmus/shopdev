@@ -1,0 +1,11 @@
+services:
+  db:
+    image: mysql/mysql-server:latest
+    container_name: shopdev_1
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: Aa123456
+    ports:
+      - "3306:3306"
+    volumes:
+      - /etc/my.cnf:/etc/my.cnf
