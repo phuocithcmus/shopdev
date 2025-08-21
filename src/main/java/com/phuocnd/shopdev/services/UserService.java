@@ -4,9 +4,11 @@ import java.util.List;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
 import com.phuocnd.shopdev.entities.user.UserEntity;
 
+@Service
 public interface UserService {
     UserEntity createUser(UserEntity userEntity);
 
